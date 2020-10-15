@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Galaxia y la Vía Láctea</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body{
+          display: grid;
+          justify-content: center;
+          grid-template-columns: 1fr minmax(500px, 1400px) 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+            "nav nav nav"
+            ". content ."
+            "foot foot foot";
+        }
+        nav {
+            grid-area: nav;
+        }
+        main { 
+            grid-area: content;
+        }
+        img {
+          grid-area: img;
+            width: 40%;
+            height: 40%;
+        }
+        img {
+          grid-area: img1;
+            width: 40%;
+            height: 40%;
+        }
+        footer {
+            grid-area: foot;
+            background-color:paleturquoise;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Astrofisica.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CamposEstudios.html">Estudios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Galaxias.html">Galaxias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="HistoriaDelUniverso.html">Historia del Universo</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <main>
+        <h1>Las Galaxias</h1>
+        <h2>¿Qúe son?</h2>
+        <p>Cómo he mencionado en la página de inicio en esta sección hablaré acerca de las galaxias: una galaxia es un conjunto de estrellas, nubes de gas, planetas, polvo cósmico, materia oscura y energía unidas gravitatoriamente en una estructura más o menos definida. La palabra «galaxia» nos llega de los griegos, los cuales atribuían el origen de la Vía Láctea a las gotas de leche derramadas en el universo por la diosa Hera mientras alimentaba a Hercules. La cantidad de estrellas que forman una galaxia es enorme y varía desde las galaxias enanas, con 10^7, hasta las galaxias gigantes, con 10^14 estrellas. Haciendo parte de una galaxia, existen subestructuras como las nebulosas, los cúmulos estelares y los sistemas estelares múltiples. Por lo general una galaxia tiene un diámetro promedio de entre 150 y 300 mil años luz. Aún así hay galaxias que superan por mucho esa medida, cómo es el caso de la galaxia IC-1101, quién tiene unos 6 millones de años luz de diámetro aproximadamente.
+        </p>
+        <img id="img" src="https://4.bp.blogspot.com/-0_bbRjTExh8/VJmJ4LiA34I/AAAAAAAAA5E/MG4PCcotRNk/s1600/10301186_1559077347670728_4400880990486792799_n.jpg" alt="IC-1101">
+
+        <h2>Clase de galaxias</h2>
+        <table class="table">
+          <tr>
+            <th>Tipo de galaxia</th>
+            <th>Información</th>
+          </tr>
+          <tr>
+            <td>Galaxias elípticas</td>
+            <td>Galaxia con forma de elipse. Pueden ser nombradas desde E0 hasta E7, donde el número significa lo ovalada que es la galaxia; así, E0 sería una forma de esfera y E7 de disco. Las galaxias más grandes son gigantes elípticas. Se cree que la mayoría de las galaxias elípticas son el resultado de la colisión y fusión de galaxias. Estas pueden alcanzar tamaños enormes y con frecuencia se las encuentra en conglomerados mayores de galaxias, cerca del núcleo. Su apariencia muestra escasa estructura y, típicamente, tienen poca materia interestelar. También tienen una tasa de formación de estrellas baja. Un ejemplo de galaxia elíptica es la galaxia más grande vista hasta el día de hoy, IC-1101.</td>
+          </tr>
+          <tr>
+            <td>Galaxias lenticulares</td>
+            <td>Las galaxias lenticulares constituyen un grupo de transición entre las galaxias elípticas y las espirales, y se dividen en tres subgrupos: SO1, SO2 y SO3. Poseen un disco, una condensación central muy importante y una envoltura extensa.</td>
+          </tr>
+          <tr>
+            <td>Galaxias espirales</td>
+            <td>Las galaxias espirales son discos rotantes de estrellas y materia interestelar, con una protuberancia central compuesta principalmente por estrellas más viejas. A partir de esta protuberancia se extienden unos brazos en forma espiral, de brillo variable. Hay dos tipos normales y barradas. Un ejemplo de galaxia espiral es la Vía Láctea. Andrómeda tambíen hace parte de esta clase de galaxias, siendo esta última la galaxia más cercana a la nuestra (se encuentra a aproximadamente 2,5 millones de años luz de nosotros).</td>
+          </tr>
+          <tr>
+            <td>Galaxias irregulares</td>
+            <td>Una galaxia irregular es una galaxia que no encaja en ninguna clasificación de galaxias de la secuencia de Hubble. Son galaxias sin forma espiral ni elíptica. Del total de galaxias observadas hasta la fecha solo un 4.7 % de las galaxias brillantes reciben el nombre de galaxia irregular.</td>
+          </tr>
+          <tr>
+            <td>Galaxias activas</td>
+            <td>Las galaxias activas son galaxias que liberan grandes cantidades de energía y/o materia al medio interestelar mediante procesos que no están relacionados con los procesos estelares ordinarios. Aproximadamente un 10 % de las galaxias pueden clasificarse como galaxias activas. La mayor parte de la energía emitida por las galaxias activas proviene de una pequeña y brillante región del núcleo de la galaxia, y en muchos casos se observan líneas espectrales de emisión anchas y/o estrechas, que evidencian la existencia de grandes masas de gas girando alrededor del centro de la galaxia. Un ejemplo de esto son los cuásares. Los cuásares consisten en un núcleo muy luminoso con fuertes líneas de emisión anchas y estrechas. En los más cercanos se observa una nubosidad difusa, revelando que este tipo de objetos no son más que núcleos de galaxias activas muy lejanas de las que únicamente somos capaces de detectar su núcleo.</td>
+          </tr>
+        </table>
+        <img id="img1" src="https://www.astromia.com/universo/fotos/vialactea.jpg" alt="Vía Láctea">
+        <h2>La Vía Láctea</h2>
+        <p>La Vía Láctea es una galaxia espiral y es en donde se encuentra el sistema solar, y por ende, la tierra, más específicamente en el brazo de Orión. Este brazo hace parte del brazo de Sagitario. Nuestra galaxia consta de 4 brazos: el brazo de Perseo, el brazo de Sagitario (donde se encuentra el sistema solar y siendo el segundo brazo más largo de nuestra galaxia), el brazo de Escudo-Centauro y el brazo de Norma.
+        La Vía Láctea tiene un diámetro de 200.000 años luz y según se cree posee una masa de 12^10 masas solares. Es una espiral barrada, es decir, tiene una banda central de estrellas brillantes que abarca de un lado a otro de la galaxia. El nombre Vía Láctea proviene de la mitología latina, y esta de la griega que significa en latín camino de leche. Esa es, en efecto, la apariencia de la tenue banda de luz que atraviesa el firmamento terrestre, y así lo afirma la mitología griega, explicando que se trata de leche derramada del pecho de la diosa Hera.
+        </p>
+        <p>Además de los cerca 150 cúmulos globulares conocidos, nuestra galaxia cuenta con cierto número de galaxias satélite. Las dos mayores con diferencia son las Nubes de Magallanes, y el resto son galaxias elípticas enanas mucho menores. Algunas de las galaxias compañeras (ejemplo, la galaxia Enana Elíptica de Sagitario) están tan cercanas a ella que están siendo despedazadas y absorbidas por nuestra galaxia.
+        </p>
+    </main>
+    <footer>
+        <h3>Contacto</h3>
+        <p>3013877871</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campos de estudio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body{
+          display: grid;
+          justify-content: center;
+          grid-template-columns: 1fr minmax(500px, 1400px) 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+            "nav nav nav"
+            ". content ."
+            "foot foot foot";
+        }
+        nav {
+            grid-area: nav;
+        }
+        main { 
+            grid-area: content;
+        }
+        img {
+            grid-area: img;
+            width: 30%;
+            height: 30%;
+        }
+        img {
+            grid-area: img1;
+            width: 30%;
+            height: 30%;
+        }
+        footer {
+            grid-area: foot;
+            background-color:orange;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Astrofisica.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CamposEstudios.html">Estudios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Galaxias.html">Galaxias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="HistoriaDelUniverso.html">Historia del Universo</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <main>
+        <h1>Campos de estudios</h1>
+        <h2>Astrofísica</h2>
+        <p>Cómo ya introduje en la página principal acá nos enfocaremos en los estudios que se realizan en ambos temas de la página. Para empezar hablemos en que se enfoca la astrofísica: La astrofísica estudia la composición y la estructura de la materia interestelar, nubes de gases y polvo que ocupan amplias zonas del espacio y que en una época eran consideradas absolutamente vacías, el estudio de la composición química de los distintos objetos a través de la espectroscopia. Otros medios de investigación fundamentales para la astrofísica son la fotometría (medición de la intensidad de la luz emitida por los objetos celestes) y fotografía astronómica. La astrofísica es una ciencia tanto experimental, en el sentido en que se basa en observaciones, como teórica, porque formula hipótesis sobre situaciones físicas no directamente accesibles. Un ejemplo claro de esto último es Stephen Hawking, quién fue astrofísico y nos dejó su legado con su grandiosa investigación y sus descubrimientos acerca de los agujeros negros.
+        </p>
+        <img id="img" src="https://www.premiosfronterasdelconocimiento.es/wp-content/uploads/sites/2/2017/05/FBBVA-15-ciencia-Stephen-Hawking.jpg" alt="Stephen Hawking">
+        <h2>Astronomía</h2>
+        <p>Ahora hablaremos acerca de que se enfoca la astronomía: La astronomía es la ciencia que estudia el espacio, del universo en general y lo estudia a través de la observación (astronomía óptica), la misma astrofísica, la radioastronomía, la astronomía estelar y galáctica, las ciencias planetarias, la astronomía extragaláctica (es decir el estudio de objetos fuera de nuestra galaxia), entre otros. La astronomía ha estado ligada al ser humano desde la antigüedad y todas las civilizaciones han tenido contacto con esta ciencia. Personajes como Aristóteles, Nicolás Copérnico, Tycho Brahe, Johannes Kepler, Galileo Galilei, Christiaan Huygens o Edmund Halley han sido algunos de sus "cultivadores". La metodología científica de este campo empezó a desarrollarse a mediados del siglo XVII. Un factor clave fue la introducción del telescopio por Galileo Galilei, que permitió examinar el cielo de la noche más detalladamente. También el tratamiento matemático de la astronomía comenzó con el desarrollo de la mecánica celeste (otra rama de la astronomía que se dedica a ver el movimiento y posición de un objeto en ambitos de la física) y con las leyes de gravitación por Isaac Newton, aunque ya había sido puesto en marcha por el trabajo anterior de astrónomos como Johannes Kepler. 
+        </p>
+        <img id="img1" src="https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/578781295cafe8eba166227e/curiosidades-galilei_0.jpg" alt="Galileo Galilei">
+    </main>
+    <footer>
+        <h3>Contacto</h3>
+        <p>3013877871</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

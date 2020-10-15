@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Física</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        img {
+          grid-area: img;
+            width: 40%;
+            height: 40%;
+        }
+        main { 
+            grid-area: content;
+            border-style: solid;
+            border-width: 1mm;
+            border-color: rgb(122, 216, 233);
+        }
+        body{
+          display: grid;
+          justify-content: center;
+          grid-template-columns: 1fr minmax(500px, 1400px) 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+            "nav nav nav"
+            ". content ."
+            "foot foot foot";
+        }
+        nav {
+            grid-area: nav;
+        }
+        #LaFísica {
+            background-color: lemonchiffon;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Áreas de investigación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Conceptos fundamentales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Magnitudes físicas</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+    <main>
+        <h1> Física </h1>
+        <img src="https://i2.wp.com/sonria.com/wp-content/uploads/2016/05/fisica.jpg?resize=1080%2C675&ssl=1" alt="Física">
+        <h2 style="color: crimson;"> Ramas</h2>
+
+        <p id="LaFísica">
+            En la Física hay varias ramas de estudio, la cual estudia diferentes propiedades de nuestro mundo/universo. Estas ramas son: la mecánica cuántica, la electromagnetismo, la relatividad, la termodinámica y la mecánica clásica.
+        </p>
+        <table class="table">
+            <tr>
+                <th style="background-color: rgb(20, 140, 220);">Ramas</th>
+                <th style="background-color: rgb(20, 220, 153);">Información</th>
+            </tr>
+            <tr>
+                <td>Mecánica cuántica</td>
+                <td>La mecánica cuántica es la rama de la física que estudia la naturaleza a escalas espaciales pequeñas, los sistemas atómicos y subatómicos y sus interacciones con la radiación electromagnética, en términos de cantidades observables. Se basa en la observación de que todas las formas de energía se liberan en unidades discretas o paquetes llamados cuantos.</td>
+            </tr>
+            <tr>
+                <td>Electromagnetismo</td>
+                <td>El electromagnetismo es la rama de la física que estudia y unifica los fenómenos eléctricos y magnéticos en una sola teoría. El electromagnetismo describe la interacción de partículas cargadas con campos eléctricos y magnéticos. La interacción electromagnética es una de las cuatro fuerzas fundamentales del universo conocido. Las partículas cargadas interactúan electromagnéticamente mediante el intercambio de fotones.</td>
+            </tr>
+            <tr>
+                <td>Relatividad</td>
+                <td>La teoría de la relatividad incluye tanto a la teoría de la relatividad especial como la de relatividad general, formuladas principalmente por Albert Einstein a principios del siglo XX, que pretendían resolver la incompatibilidad existente entre la mecánica newtoniana y el electromagnetismo. La teoría de la relatividad especial, publicada en 1905, trata de la física del movimiento de los cuerpos en ausencia de fuerzas gravitatorias, en el que se hacían compatibles las ecuaciones de Maxwell del electromagnetismo con una reformulación de las leyes del movimiento. En la teoría de la relatividad especial, Einstein, Lorentz y Minkowski, entre otros, unificaron los conceptos de espacio y tiempo, en un ramado tetradimensional al que se le denominó espacio-tiempo.</td>
+            </tr>
+            <tr>
+                <td>Termodinámica</td>
+                <td>La termodinámica es la rama de la física que describe los estados de equilibrio termodinámico a nivel macroscópico.</td>
+            </tr>
+            <tr>
+                <td>Mecánica clásica</td>
+                <td>La mecánica clásica es la rama de la física que estudia las leyes del comportamiento de cuerpos físicos macroscópicos (a diferencia de la mecánica cuántica) en reposo y a velocidades pequeñas comparadas con la velocidad de la luz.En la mecánica clásica en general se tienen tres aspectos invariantes: el tiempo es absoluto, la naturaleza realiza de forma espontánea la mínima acción y la concepción de un universo determinado.</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
